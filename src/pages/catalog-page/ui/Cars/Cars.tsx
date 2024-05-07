@@ -7,9 +7,19 @@ const Cars: FC = () => {
   const cars: Query["cars"] = carsJSON;
 
   return (
-    <div style={{width:'100%', display:'flex', flexWrap:'wrap', alignItems:'center', justifyContent:'center'}}>
+    <div
+      style={{
+        maxWidth: "1920px",
+        display: "flex",
+        padding: "20px",
+        flexWrap: "wrap",
+        columnGap: "20px",
+        rowGap: "73px",
+        border: "1px solid black",
+      }}
+    >
       {cars.map((car) => (
-       <CarItem {...car}/>
+        <CarItem {...car} />
       ))}
     </div>
   );

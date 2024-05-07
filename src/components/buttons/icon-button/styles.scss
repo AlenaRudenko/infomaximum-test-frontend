@@ -1,0 +1,12 @@
+@import "./../../../constants/default-variables.scss";
+
+.iconButton {
+  height: 27px;
+  width: 27px;
+  margin-left: 25px;
+  background: url("./../../../assets/icons/heart/empty-heart.svg") no-repeat;
+  cursor: pointer;
+  &:hover {
+    background: url("./../../../assets/icons/heart/hover-heart.svg") no-repeat;
+  }
+}
