@@ -1,0 +1,87 @@
+@import './../../../constants/default-variables.scss';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+  
+body {
+    height: 100vh;
+    display: grid;
+    align-items: center;
+}
+
+.icon {
+    display: inline-block;
+    width: 27px;
+    height: 24px;
+    fill: transparent;
+    stroke: $GRAY3;
+    cursor: pointer;
+    position: relative;
+
+    svg path {
+      transform-origin: center;
+    }
+
+    
+    .heart--fill {
+      position: absolute;
+      left: 0;
+      right: 0;
+      stroke: none;
+      opacity: 0;
+        &:hover {
+            opacity: 1;
+            transition: opacity 0.3s ease-in-out;
+        }
+    }
+}
+  
+//   @keyframes stroke-animation {
+//     0% {
+//       stroke-dashoffset: 0;
+//     }
+//     30% {
+//       stroke-dashoffset: 1550;
+//     }
+//     60% {
+//       stroke-dashoffset: 3100;
+//       fill: transparent;
+//       transform: scale(1);
+//     }
+//     80% {
+//       fill: $BLUE4;
+//       transform: scale(1.1);
+//     }
+//     90% {
+//       transform: scale(1);
+//     }
+//     100% {
+//       stroke-dashoffset: 3100;
+//       fill: $BLUE3;
+//     }
+//   }
+  
+//   @keyframes fade-animation {
+//     70% {
+//       fill: transparent;
+//       transform: scale(1);
+//     }
+//     80% {
+//       fill: $BLUE4;
+//       transform: scale(1.1);
+//       opacity: 1;
+//     }
+//     90% {
+//       opacity: 1;
+//     }
+//     100% {
+//       transform: scale(2.5);
+//       opacity: 0;
+//     }
+//   }
+//   .heart--fill:hover {
+//     opacity: 1;
+//   

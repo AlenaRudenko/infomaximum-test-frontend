@@ -8,5 +8,5 @@ export const GLOBAL_STYLES = {
     margin: 0,
     padding: 0,
     height: "100%",
-  },
+  }
 };

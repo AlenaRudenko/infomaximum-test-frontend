@@ -1,0 +1,19 @@
+.car__section {
+    width: 445px;
+    height: 498px;
+    border-radius: 15px 15px 0px 0px;
+    margin:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.car__image {
+    width: 445px;
+    height: 310px;
+img {   
+    width: 445px;
+    border-radius: 15px 15px 0px 0px;;
+    height: 310px;
+       object-fit: cover;
+    }
+}    
