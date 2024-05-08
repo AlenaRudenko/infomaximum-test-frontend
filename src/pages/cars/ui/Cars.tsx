@@ -4,29 +4,24 @@ import { Query } from "../../../graphql/generated";
 import { CarItem } from "./components/car-item/CarItem";
 import { Filter } from "../../../components/filter/Filter";
 import { Search } from "../../../components/search/Search";
+import { Container, StyledCars, StyledSearchSortBar } from "./Cars.styles";
 
 const Cars: FC = () => {
   const cars: Query["cars"] = carsJSON;
 
   return (
-    <div style={{  padding: '0 20px',
-      margin: '0 auto',
-      marginTop: '116px',
-      maxWidth: '1920px'}}>
-        <div style={{display:'flex', alignItems:'center', width:'100%',justifyContent:'space-between' }}>
-                  <Filter />
+   <Container>
+     <StyledSearchSortBar>
+        <Filter />
         <Search />
-        </div>
-
-<div style={{display: 'grid',marginTop:'42px',
-  gridTemplateColumns: 'repeat(4, 1fr)',
-  gap: '20px',
-  marginBottom: '150px'}}>
+      </StyledSearchSortBar>
+      <StyledCars>
       {cars.map((car) => (
         <CarItem {...car} />
       ))}
-    </div>
-    </div>
+      </StyledCars>
+   </Container>
+ 
 
   );
 };

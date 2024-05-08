@@ -1,6 +1,6 @@
 
 import { AppButton } from "../../../../../components/buttons/app-button/AppButton";
-import { IconButton } from "../../../../../components/buttons/fav-button/FavButton";
+import { FavButton } from "../../../../../components/buttons/fav-button/FavButton";
 import { TCar } from "../../../../../interfaces/car.type";
 import "./styles.scss";
 
@@ -21,7 +21,7 @@ export const CarItem = (car: TCar) => {
         <h4>от {price} </h4>
         <div style={{ display: "flex", alignItems: "center" }}>
           <AppButton type='card' text='Купить' onClick={() => {}} />
-          <IconButton />
+          <FavButton />
         </div>
       </div>
     </section>
