@@ -1,7 +1,8 @@
 import { Navigate, createBrowserRouter } from "react-router-dom";
 import App from "./App";
-import { FavoritePage } from "./pages/favorite-page/FavoritePage";
-import { CatalogPage } from "./pages/catalog-page/ui/CatalogPage";
+import { FavoritePage } from "./pages/favorite/FavoritePage";
+import Cars from "./pages/cars/ui/Cars";
+
 
 export const router = createBrowserRouter([
     {
@@ -14,7 +15,7 @@ export const router = createBrowserRouter([
           },
           {
             path: '/catalog',
-            element: <CatalogPage />,
+            element: <Cars />,
           },
           {
             path: '/favoriteCars',

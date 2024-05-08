@@ -1,7 +1,7 @@
-import { AppButton } from "../../../../../../components/buttons/delete-button/app-button/AppButton";
-import { IconButton } from "../../../../../../components/buttons/icon-button/IconButton";
-import { SavedIcon } from "../../../../../../icons/source/saved-icon/SavedIcon";
-import { TCar } from "../../../../../../interfaces/car.type";
+
+import { AppButton } from "../../../../../components/buttons/app-button/AppButton";
+import { IconButton } from "../../../../../components/buttons/fav-button/FavButton";
+import { TCar } from "../../../../../interfaces/car.type";
 import "./styles.scss";
 
 export const CarItem = (car: TCar) => {
