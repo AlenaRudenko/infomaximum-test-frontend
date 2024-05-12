@@ -1,9 +1,11 @@
 
 В проекте были использованы следующие библиотеки:
 
-MobX, mobx-react-lite в качестве стейт-менеджера
-Styled Components для стилизации компонентов
-Apollo Client для интеграции с бэком
+MobX, mobx-react-lite в качестве стейт-менеджера;
+
+Styled Components для стилизации компонентов;
+
+Apollo Client для интеграции с бэком.
 
 
 
