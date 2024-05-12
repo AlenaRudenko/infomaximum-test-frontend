@@ -1,1 +1,0 @@
-export const filterItems = [{value:'Сначала в наличии', id:'exist'}, {value:'По имени (A-Z)', id:'AZ'}, {value:'По имени (Z-A)', id:'ZA'}, {value:'Сначала новее',id:'new'},{value:'Сначала старше', id:'old'},{value:'Сначала дешевле' ,id:'lowPrice'}, {value:'Сначала дороже', id:'highPrice'} ];

@@ -1,12 +1,14 @@
-import { TButton } from "./types"
-import { StyledAppButton } from "./AppButton.styles"
+import { TButton } from "./types";
+import { StyledAppButton } from "./AppButton.styles";
+import { memo } from "react";
 
-export const AppButton = ({text, type='catalog', isDisabled=false, onClick}:TButton) => {
-    
-    return(
-            <StyledAppButton type={type} isDisabled={isDisabled}>
-                <h4>{text}</h4>
-            </StyledAppButton>
-
-    ) 
-}
+export const AppButton = memo(
+  ({ text, type, $isDisabled = false, onClick }: TButton) => {
+    console.log("appbutton");
+    return (
+      <StyledAppButton type={type} disabled={$isDisabled} onClick={onClick}>
+        <h4>{text}</h4>
+      </StyledAppButton>
+    );
+  }
+);

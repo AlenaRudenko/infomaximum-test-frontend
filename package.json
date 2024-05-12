@@ -10,9 +10,13 @@
     "generate": "graphql-codegen"
   },
   "dependencies": {
+    "@apollo/client": "^3.10.3",
+    "@emotion/is-prop-valid": "^1.2.2",
     "@emotion/react": "11.10.4",
     "@types/styled-components": "^5.1.34",
-    "graphql": "16.6.0",
+    "graphql": "^16.6.0",
+    "mobx": "^6.12.3",
+    "mobx-react-lite": "^4.0.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-router-dom": "^6.23.0",

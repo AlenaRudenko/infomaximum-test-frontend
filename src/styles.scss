@@ -103,6 +103,7 @@ section {
 
 body {
   line-height: 1;
+  overflow: hidden;
 }
 ol,
 ul {
@@ -164,6 +165,8 @@ button {
 }
 .appWrapper {
   display: grid;
+  box-sizing: border-box;
   min-height: 100vh;
   grid-template-rows: auto 1fr;
+  overflow: hidden;
 }
